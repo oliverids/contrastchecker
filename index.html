@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contrast Checker - API Consumer</title>
+</head>
+
+<body>
+    <section class="section-select container">
+        <div class="titulo">
+            <h1>Contrast Checker</h1>
+            <h2>API Consumer</h2>
+        </div>
+
+        <div class="interact">
+            <div class="cor-select">
+                <label>
+                    <h3>Foreground Color</h3>
+                </label>
+                <div class="cor-valor">
+                    <input type="color" class="forecor">
+                    <input type="text" class="forecor-input" required>
+                </div>
+            </div>
+
+            <div class="cor-select">
+                <label>
+                    <h3>Background Color</h3>
+                </label>
+                <div class="cor-valor">
+                    <input type="color" class="backcor">
+                    <input type="text" class="backcor-input" required>
+                </div>
+            </div>
+
+            <div class="result">
+                <h3>Contrast Ratio</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wcag container">
+        <div class="normal">
+            <h3>Normal Text</h3>
+            <p class="aa">WCAG AA</p>
+            <p class="aaa">WCAG AAA</p>
+        </div>
+
+        <div class="large">
+            <h3>Large Text</h3>
+            <p class="aa">WCAG AA</p>
+            <p class="aaa">WCAG AAA</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
