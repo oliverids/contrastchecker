@@ -7,7 +7,7 @@ checker();
 
 let selects = [forecor, backcor];
 selects.forEach(e => {
-    e.addEventListener('change', checker)
+    e.addEventListener('input', checker)
 })
 
 function checker() {
