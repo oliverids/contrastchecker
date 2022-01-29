@@ -2,6 +2,10 @@ main {
     padding-top: 2rem;
     margin-bottom: 2rem;
 
+    @media only screen and (min-width: 1200px) {
+        padding-top: 3rem;
+    }
+
     .container {
         flex-direction: column;
     }
@@ -9,10 +13,10 @@ main {
 
 .interact {
     padding-bottom: 2rem;
-    
+
     .container {
         flex-direction: column;
-        gap: 36px;
+        gap: 44px;
 
         .first-row,
         .first-row .inputs,
@@ -23,6 +27,21 @@ main {
         }
 
         .first-row {
+            @media only screen and (min-width: 768px) {
+                .inputs {
+                    flex-direction: row;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .inputs {
+                    justify-content: space-between;
+                }
+            }
+
             .result p {
                 font-size: 1.7rem;
                 text-align: center;
@@ -31,6 +50,18 @@ main {
         }
 
         .second-row {
+            @media only screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                justify-content: space-between;
+
+                .block {
+                    width: 410px;
+                }
+            }
+
             .block .ps div {
                 display: flex;
                 flex-direction: column;
