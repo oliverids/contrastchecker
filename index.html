@@ -10,66 +10,63 @@
 </head>
 
 <body>
-
-    <section class="section-select">
+    <main>
         <div class="container">
-            <div class="titulo">
-                <h1>Contrast Checker</h1>
-                <h2>API Consumer</h2>
-            </div>
+            <h1>Contrast Checker</h1>
+            <h2>API Consumer</h2>
+        </div>
+    </main>
 
-            <div class="interact">
+    <section class="interact">
+        <div class="container">
+            <section class="first-row">
                 <div class="inputs">
                     <div class="cor-select block">
-                        <label>
-                            <h3>Foreground Color</h3>
-                        </label>
+                        <label><h3>Foreground Color</h3></label>
                         <div class="cor-valor">
                             <input type="color" class="forecor">
                             <input type="text" class="forecor-input" required>
                         </div>
                     </div>
-    
+
                     <div class="cor-select block">
-                        <label>
-                            <h3>Background Color</h3>
-                        </label>
+                        <label><h3>Background Color</h3></label>
                         <div class="cor-valor">
                             <input type="color" class="backcor">
                             <input type="text" class="backcor-input" required>
                         </div>
                     </div>
-    
-                    <div class="result block">
-                        <h3>Contrast Ratio</h3>
-                        <p></p>
-                    </div>
                 </div>
 
-                <div class="wcag">
-                    <div class="block">
-                        <div class="normal ps">
-                            <h3>Normal Text</h3>
-                            <div>
-                                <p class="aa" id="naa">WCAG AA</p>
-                                <p class="aaa" id="naaa">WCAG AAA</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="result block">
+                    <h3>Contrast Ratio</h3>
+                    <p></p>
+                </div>
+            </section>
 
-                    <div class="block">
-                        <div class="large ps">
-                            <h3>Large Text</h3>
-                            <div>
-                                <p class="aa">WCAG AA</p>
-                                <p class="aaa">WCAG AAA</p>
-                            </div>
+            <section class="second-row">
+                <div class=" block">
+                    <div class="normal ps">
+                        <h3>Normal Text</h3>
+                        <div>
+                            <p class="aa" id="naa">WCAG AA</p>
+                            <p class="aaa" id="naaa">WCAG AAA</p>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class=" block">
+                    <div class="large ps">
+                        <h3>Large Text</h3>
+                        <div>
+                            <p class="aa">WCAG AA</p>
+                            <p class="aaa">WCAG AAA</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </section>
-
 </body>
 <script src="script.js"></script>
 

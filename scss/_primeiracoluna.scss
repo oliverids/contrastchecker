@@ -1,145 +1,63 @@
-.section-select {
-    margin-top: 2.4rem;
+main {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
 
     .container {
         flex-direction: column;
+    }
+}
 
-        .titulo {
-            margin-bottom: 1.6rem;
+.interact {
+    padding-bottom: 2rem;
+    
+    .container {
+        flex-direction: column;
+        gap: 36px;
+
+        .first-row,
+        .first-row .inputs,
+        .second-row {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
-        .interact {
-            @media only screen and (min-width: 1040px) {
-                & {
-                    max-width: 1040px;
-                }
+        .first-row {
+            .result p {
+                font-size: 1.7rem;
+                text-align: center;
+                font-weight: $semi;
             }
-            .inputs {
-                @media only screen and (min-width: 768px) {
-                    & {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
+        }
 
-                        .cor-select {
-                            width: 330px;
-                        }
-                        .result {
-                            margin: 0 auto 2rem auto;
-                            width: 330px;
-                        }
-                    }
-                }
+        .second-row {
+            .block .ps div {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
 
-                .cor-select {
-                    @media only screen and (min-width: 1040px) {
-                        &:nth-child(2) {
-                            margin: 0 20px 2rem 20px;
-                        }
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &::after {
+                        font-size: 1rem;
+                        color: #fff;
+                        font-weight: $bold;
+                        border-radius: 4px;
+                        padding: 8px 12px;
+                        display: block;
                     }
 
-                    .cor-valor {
-                        display: flex;
-                        align-items: center;
-                        max-width: 100%;
-
-                        input[type="text"] {
-                            width: 100%;
-                            margin-left: 0.9rem;
-                            padding: 8px 4px 8px 12px;
-                            border: 0.4px solid rgb(63, 126, 252);
-                            border-radius: 2px;
-                            font-size: 1rem;
-                            color: #323232;
-                        }
-
-                        input[type="color"] {
-                            -webkit-appearance: none;
-                            border: none;
-                            width: 60px;
-                            height: 40px;
-                        }
-                        input[type="color"]::-webkit-color-swatch-wrapper {
-                            padding: 0;
-                        }
-                        input[type="color"]::-webkit-color-swatch {
-                            border: 4px solid #fdfdfd;
-                            border-radius: 2px;
-                            box-shadow: 0 0 0 1px rgb(63, 126, 252);
-                        }
-                    }
-                }
-                .result {
-                    p {
-                        text-align: center;
-                        font-size: 1.8rem;
-                        font-weight: 600;
-                        color: rgb(25, 56, 119);
-                    }
-                }
-            }
-
-            .wcag {
-                @media only screen and (min-width: 768px) {
-                    & {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-
-                        .block {
-                            width: 330px;
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-
-                .block {
-
-                    @media only screen and (min-width: 1094px) {
-                        & {
-                            width: 495px;
-                        }
+                    &.passa::after {
+                        content: "PASSA";
+                        background: #0d6311;
                     }
 
-                    .ps {
-                        div {
-                            p {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                &:first-child {
-                                    margin-bottom: 1rem;
-                                }
-                                &.passa::after,
-                                &.passa::after {
-                                    content: "PASSA";
-                                    font-size: 1rem;
-                                    color: #fff;
-                                    font-weight: bold;
-                                    background: #0d6311;
-                                    border-radius: 4px;
-                                    // margin-left: 12px;
-                                    padding: 8px 12px;
-                                    display: block;
-                                }
-
-                                &.falha::after,
-                                &.falha::after {
-                                    content: "FALHA";
-                                    font-size: 1rem;
-                                    color: #fff;
-                                    font-weight: bold;
-                                    background: #630d0d;
-                                    border-radius: 4px;
-                                    // margin-left: 12px;
-                                    padding: 8px 12px;
-                                    display: block;
-                                }
-                            }
-                        }
+                    &.falha::after {
+                        content: "FALHA";
+                        background: #9d0808;
                     }
                 }
             }
